@@ -1,5 +1,5 @@
 <template>
-  <h1>haha</h1>
+  <h1 class="haha">{{ msg }}</h1>
 </template>
 
 <script>
@@ -10,3 +10,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.haha {
+  color: red;
+}
+</style>
