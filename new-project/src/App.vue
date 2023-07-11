@@ -1,18 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWoorld msg="Welcome to Your Vue.js App" />
-  <FirstOne msg="asdad" />
+ 
+  <HeaderComponent />
 </template>
 
 <script>
-import HelloWoorld from "./components/HelloWoorld.vue";
-import FirstOne from "./components/FirstOne.vue";
+
+import HeaderComponent from "./components/HeaderComponent.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWoorld,
-    FirstOne,
+   
+    HeaderComponent
+
   },
 };
 </script>
