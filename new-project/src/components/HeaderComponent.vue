@@ -1,14 +1,18 @@
 <template>
   <header>
 
-    <nav>
+    <nav class="nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <ButtonComponent></ButtonComponent>
+      <div>
+        <ButtonComponent text="Log in" color="red"></ButtonComponent>
+        <ButtonComponent text="Sign in" color="red"></ButtonComponent>
+      </div>
+
     </nav>
   </header>
 </template>
@@ -19,14 +23,25 @@ import ButtonComponent from "./ButtonComponent.vue";
 
 export default {
   name: 'HeaderComponent',
+  props: {
+    title: String,
+  },
   components: {
     ButtonComponent,
-  }
+  },
 }
 </script>
 
 <style>
 /* Example CSS styles for the header */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -51,6 +66,7 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 20px;
 }
 
 header nav ul li a:hover {
