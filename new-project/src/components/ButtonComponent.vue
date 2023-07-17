@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" :style="{background:color}">{{text}}</button>
+    <button class="btn">{{ text }}</button>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {
     name: 'ButtonComponent',
     props: {
         text: String,
-        color:String
+        color: String
     }
 }
 </script>
@@ -20,6 +20,13 @@ export default {
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    padding: 10px 12px;
+    padding: 10px 16px;
+    background-color: rgb(25, 188, 134);
+    margin-right: 10px;
+}
+
+.btn:hover {
+
+    background-color: aqua;
 }
 </style>
